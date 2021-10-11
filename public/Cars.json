@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "name": "2020 MAZDA MAZDA3",
+    "images": [
+      "https://content.homenetiol.com/888x626/d21c00633e9e496d8beee66a8b117348.jpg",
+      "https://content.homenetiol.com/888x626/a2944efec9ad4ff7bebe5a017076cb4d.jpg",
+      "https://content.homenetiol.com/888x626/4721f7e33e874099922c5dd7d6382637.jpg",
+      "https://content.homenetiol.com/888x626/8f83bb89d2674adebdd00a7ebd56a1e5.jpg",
+      "https://content.homenetiol.com/888x626/a1d1438939e34ebc8a789fc64cbb7d03.jpg"
+    ],
+    "price": 24799,
+    "mileage": 1768,
+    "mpg": "26 City / 35 Highway",
+    "carLocation": "1021 Baltimore Pike, Glen Mills, PA 19342",
+    "vin": "#3MZBPADL1LM127644",
+    "engine": "2.5L I-4"
+  },
+  {
+    "id": 2,
+    "name": "2021 Volkswagen Passat",
+    "images": [
+      "https://content.homenetiol.com/888x626/bc558711aa0e43e1b348534c4e0cd28c.jpg",
+      "https://content.homenetiol.com/888x626/7d0e10281172469e812b2afbe6545bab.jpg",
+      "https://content.homenetiol.com/888x626/74dda44d02c240eca4673d70c5b3fb27.jpg",
+      "https://content.homenetiol.com/888x626/dfe23872a4704f6ca51cdf5710375cba.jpg",
+      "https://content.homenetiol.com/888x626/6375f7e167494084b6ce0ccf554482c4.jpg"
+    ],
+    "price": 26799,
+    "mileage": 1824,
+    "carLocation": "1971 Burlington Mount Holly Rd, Westampton, NJ 08060",
+    "mpg": "26 City / 36 Highway",
+    "vin": "#1VWSA7A30MC002744",
+    "engine": "2.0L I-4 Turbocharged"
+  },
+  {
+    "id": 3,
+    "name": "2020 Dodge Challenger",
+    "images": [
+      "https://content.homenetiol.com/888x626/c6c6bc23f7a54593a0fa750c7a421e33.jpg",
+      "https://content.homenetiol.com/888x626/11b5e216e0aa4c9da642d2226115d959.jpg",
+      "https://content.homenetiol.com/888x626/0964fc64198042a7b4be5a11697324ae.jpg",
+      "https://content.homenetiol.com/888x626/b665691209684bf880deda47fae5af38.jpg",
+      "https://content.homenetiol.com/888x626/468e9a7463504812a463a08b2e3e0091.jpg"
+    ],
+    "price": 50299,
+    "mileage": 1856,
+    "mpg": "15 City / 24 Highway",
+    "carLocation": "1021 Baltimore Pike, Glen Mills, PA 19342",
+    "vin": "#2C3CDZFJ6LH206952",
+    "engine": "6.4L V8"
+  },
+  {
+    "id": 4,
+    "name": "2021 Toyota Corolla",
+    "images": [
+      "https://content.homenetiol.com/888x626/18f1f13db68247db9b01c001a6716b2e.jpg",
+      "https://content.homenetiol.com/888x626/b9b6671a7d2c4772956e943d25e2876e.jpg",
+      "https://content.homenetiol.com/888x626/f9307fea27014e479d1f5410400a30c0.jpg",
+      "https://content.homenetiol.com/888x626/6572308447b04555bba7d794aca5786e.jpg",
+      "https://content.homenetiol.com/888x626/e9427a9059b3413799e50444b1d2a432.jpg"
+    ],
+    "price": 22799,
+    "mileage": 1956,
+    "mpg": "30 City / 38 Highway",
+    "carLocation": "2801 Bethlehem Pike, Hatfield, PA 19440",
+    "vin": "#5YFEPMAE4MP167265",
+    "engine": "1.8L I-4"
+  },
+  {
+    "id": 5,
+    "name": "2021 Tesla Model Y",
+    "images": [
+      "https://content.homenetiol.com/888x626/64deeb77e2e74ba29aead53401a25d53.jpg",
+      "https://content.homenetiol.com/888x626/55b8f149cdfc4b38ac2907038e801a53.jpg",
+      "https://content.homenetiol.com/888x626/89eb369eddd54932bfbf6a649c2611ee.jpg",
+      "https://content.homenetiol.com/888x626/4439722f9bfb42cd8e05824ec8634fa0.jpg",
+      "https://content.homenetiol.com/888x626/9da3552390dc469d9eea169af14e5d39.jpg"
+    ],
+    "price": 65299,
+    "mileage": 1975,
+    "mpg": "Unknown",
+    "carLocation": "4095 Route 1 South, Monmouth Junction, NJ 08852",
+    "vin": "#5YJYGDEE9MF246482",
+    "engine": "Electric Motor"
+  },
+  {
+    "id": 6,
+    "name": "2020 Ford Fusion",
+    "images": [
+      "https://content.homenetiol.com/888x626/90924057b2714c29b770c433557e90bd.jpg",
+      "https://content.homenetiol.com/888x626/5cbe730a6da34d83af131eaac075047b.jpg",
+      "https://content.homenetiol.com/888x626/3c8ae4a7e11f4fc4b861d6b573a8309a.jpg",
+      "https://content.homenetiol.com/888x626/fe376024d6a943e18a61fe9d80b94073.jpg",
+      "https://content.homenetiol.com/888x626/0e737510f23647a6b1c0358f3789abc2.jpg"
+    ],
+    "price": 25696,
+    "mileage": 2036,
+    "mpg": "43 City / 41 Highway",
+    "carLocation": "21200 Route 19, Cranberry Township, PA 16066",
+    "vin": "#3FA6P0LU1LR183701",
+    "engine": "2.0L I-4 Hybrid"
+  },
+  {
+    "id": 7,
+    "name": "2021 Chevrolet Camaro",
+    "images": [
+      "https://content.homenetiol.com/888x626/b9c85d5165a14f0f9987614dcbfed320.jpg",
+      "https://content.homenetiol.com/888x626/157de6e7e0784f0e972d7a3e061b5a61.jpg",
+      "https://content.homenetiol.com/888x626/51c40cabdf8f4a449db59806fa8bcab1.jpg",
+      "https://content.homenetiol.com/888x626/adab470bd7074b1e8bbefe605b321f70.jpg",
+      "https://content.homenetiol.com/888x626/227d17409dae4995ad8c55b5c8b22aaf.jpg"
+    ],
+    "price": 56299,
+    "mileage": 2545,
+    "mpg": "16 City / 24 Highway",
+    "carLocation": "2801 Bethlehem Pike, Hatfield, PA 19440",
+    "vin": "#1G1FG1R71M0103390",
+    "engine": "6.2L V8"
+  },
+  {
+    "id": 8,
+    "name": "2020 Honda Civic",
+    "images": [
+      "https://content.homenetiol.com/888x626/af9feac8298d474dbf94c8e8477b847a.jpg",
+      "https://content.homenetiol.com/888x626/c926eff6a93d462788ebd7b289c4cda1.jpg",
+      "https://content.homenetiol.com/888x626/fc7cced64f334c98a16c3ae4bf2648a1.jpg",
+      "https://content.homenetiol.com/888x626/6e33a7dd492a4755972efaa74b0786fa.jpg",
+      "https://content.homenetiol.com/888x626/76f0d4ff07994829bb468bc7eedf7ef0.jpg"
+    ],
+    "price": 25599,
+    "mileage": 2674,
+    "mpg": "32 City / 42 Highway",
+    "carLocation": "1021 Baltimore Pike, Glen Mills, PA 19342",
+    "vin": "#19XFC1F3XLE213395",
+    "engine": "1.5L I-4 Turbocharged"
+  },
+  {
+    "id": 9,
+    "name": "2020 Toyota Avalon",
+    "images": [
+      "https://content.homenetiol.com/888x626/695d4e50e7dd485390ff5de30f6ee32d.jpg",
+      "https://content.homenetiol.com/888x626/a7b8a4daa2b54dfe972ba1e6089575b8.jpg",
+      "https://content.homenetiol.com/888x626/9b7fed7773ff48ac8bdedd45fdbc12c7.jpg",
+      "https://content.homenetiol.com/888x626/8aa969a83afe4d9db6c50e2d5754e792.jpg",
+      "https://content.homenetiol.com/888x626/6dce647e3b19421e9d18f9a157bce247.jpg"
+    ],
+    "price": 35799,
+    "mileage": 2726,
+    "mpg": "43 City / 44 Highway",
+    "carLocation": "1021 Baltimore Pike, Glen Mills, PA 19342",
+    "vin": "#4T1A21FB2LU017047",
+    "engine": "2.5L I-4 Hybrid"
+  },
+  {
+    "id": 10,
+    "name": "2021 Volvo V60",
+    "images": [
+      "https://content.homenetiol.com/888x626/3e94ba7206ef4dfbac0724906aa2cf75.jpg",
+      "https://content.homenetiol.com/888x626/6d119365508f44ae8e54ffca2c3bf04e.jpg",
+      "https://content.homenetiol.com/888x626/81c51789b979425ba35189d2536d752f.jpg",
+      "https://content.homenetiol.com/888x626/adfcd4b8e684452194ddcee211d2dc25.jpg",
+      "https://content.homenetiol.com/888x626/20563ea699d14e1d9ffe4dafac2be396.jpg"
+    ],
+    "price": 45299,
+    "mileage": 2829,
+    "mpg": "22 City / 31 Highway",
+    "carLocation": "Pottstown Pike, Chester Springs, PA 19425",
+    "vin": "#YV4102WK5M1071961",
+    "engine": "2.0L I-4 Turbocharged"
+  },
+  {
+    "id": 11,
+    "name": "2017 Chevrolet Corvette",
+    "images": [
+      "https://content.homenetiol.com/888x626/9bbaaf88cb87423ab615744503b2756c.jpg",
+      "https://content.homenetiol.com/888x626/0b93732a244c4519a918fa208a9cbd70.jpg",
+      "https://content.homenetiol.com/888x626/b2e77a6713974efa8b03af4a94852d46.jpg",
+      "https://content.homenetiol.com/888x626/6276e399d1b840d6b7bbdd92036690d2.jpg",
+      "https://content.homenetiol.com/888x626/fd2c3c5f5f564da0b29ce9d1664ad61e.jpg"
+    ],
+    "price": 70596,
+    "mileage": 1781,
+    "mpg": "16 City / 25 Highway",
+    "carLocation": "4095 Route 1 South, Monmouth Junction, NJ 08852",
+    "vin": "#1G1YX2D75H5110096",
+    "engine": "6.2L V8"
+  },
+  {
+    "id": 12,
+    "name": "2021 Toyota Corolla",
+    "images": [
+      "https://content.homenetiol.com/888x626/18f1f13db68247db9b01c001a6716b2e.jpg",
+      "https://content.homenetiol.com/888x626/b9b6671a7d2c4772956e943d25e2876e.jpg",
+      "https://content.homenetiol.com/888x626/f0c3880513be4fdcb6b23fc45cc18f9f.jpg",
+      "https://content.homenetiol.com/888x626/6572308447b04555bba7d794aca5786e.jpg",
+      "https://content.homenetiol.com/888x626/e9427a9059b3413799e50444b1d2a432.jpg"
+    ],
+    "price": 22799,
+    "mileage": 1956,
+    "mpg": "30 City / 38 Highway",
+    "carLocation": "2801 Bethlehem Pike, Hatfield, PA 19440",
+    "vin": "#1G1YX2D75H5110096",
+    "engine": "1.8L I-4"
+  },
+  {
+    "id": 13,
+    "name": "2016 Chevrolet Corvette",
+    "images": [
+      "https://content.homenetiol.com/888x626/52d474934e1e4635a2ada4aa06deb4ff.jpg",
+      "https://content.homenetiol.com/888x626/d03cfcfe90a342bd9a703efd896706ca.jpg",
+      "https://content.homenetiol.com/888x626/22243eece0c848b69d8313ad4b161a0d.jpg",
+      "https://content.homenetiol.com/888x626/a8028b4e646745e5b200e40f66019894.jpg",
+      "https://content.homenetiol.com/888x626/4ddb191a2c544447830e55604ce5f1f0.jpg"
+    ],
+    "price": 79249,
+    "mileage": 3157,
+    "mpg": "13 City / 23 Highway",
+    "carLocation": "21 Pottstown Pike, Chester Springs, PA 19425",
+    "vin": "#1G1YS2D6XG5611585",
+    "engine": "6.2L V8 Supercharged"
+  },
+  {
+    "id": 14,
+    "name": "2019 Chevrolet Camaro",
+    "images": [
+      "https://content.homenetiol.com/888x626/bb102908e86b40e4838f52dd04c2228b.jpg",
+      "https://content.homenetiol.com/888x626/a28b6d1fcc934e51b2c17e3bf6f693b1.jpg",
+      "https://content.homenetiol.com/888x626/f6b463b2f4f843a9921ed553358dbbe3.jpg",
+      "https://content.homenetiol.com/888x626/3a515753333547eda77e6b33662c5ed4.jpg",
+      "https://content.homenetiol.com/888x626/0434d941956a47ee9acf479cabbc585e.jpg"
+    ],
+    "price": 70799,
+    "mileage": 3281,
+    "mpg": "13 City / 21 Highway",
+    "carLocation": "21 Pottstown Pike, Chester Springs, PA 19425",
+    "vin": "#1G1FK1R65K0156757",
+    "engine": "6.2L V8 Supercharged"
+  },
+  {
+    "id": 15,
+    "name": "2020 Chevrolet Silverado 1500",
+    "images": [
+      "https://content.homenetiol.com/888x626/c04af2db100d447581f3dfe51cdc91a6.jpg",
+      "https://content.homenetiol.com/888x626/185a16db5eb344adb601c75523136655.jpg",
+      "https://content.homenetiol.com/888x626/f1a968e8ba4c4611a9fce50285cc8c12.jpg",
+      "https://content.homenetiol.com/888x626/4c19404d0fa24ebc8d37cb9fec01c8ca.jpg",
+      "https://content.homenetiol.com/888x626/e20485fbf29346baa3ca63543651ef2c.jpg"
+    ],
+    "price": 47396,
+    "mileage": 3895,
+    "mpg": "16 City / 22 Highway",
+    "carLocation": "21 Pottstown Pike, Chester Springs, PA 19425",
+    "vin": "#3GCUYDED7LG119970",
+    "engine": "5.3L V8"
+  },
+  {
+    "id": 16,
+    "name": "2021 Acura TLX",
+    "images": [
+      "https://content.homenetiol.com/888x626/10c1c6a4ddb44b60af6fbffceb62259e.jpg",
+      "https://content.homenetiol.com/888x626/adb2940659a04bf29b76264b55b69f3e.jpg",
+      "https://content.homenetiol.com/888x626/8f3327ba3a3c4e1c9c16744451974b7b.jpg",
+      "https://content.homenetiol.com/888x626/615d73627794457d884a928db7030692.jpg",
+      "https://content.homenetiol.com/888x626/2d5264404d0c40c4a221b5b7efc0dd2c.jpg"
+    ],
+    "price": 44799,
+    "mileage": 4418,
+    "mpg": "21 City / 29 Highway",
+    "carLocation": "21 Pottstown Pike, Chester Springs, PA 19425",
+    "vin": "#19UUB6F51MA006344",
+    "engine": "2.0L I-4 Turbocharged"
+  }
+]
