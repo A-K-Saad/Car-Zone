@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.navbar {
+  background: #103658;
+}
+.navbar-light .navbar-nav .nav-link,
+i {
+  color: #e7e9ff;
+  font-size: 18px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #bcc1ff;
+  font-size: 18px;
+}
+.active {
+  color: #70c6ff !important;
+}
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+}
+.main-title {
+  color: #bfc4ff;
+}
+.navbar-brand img {
+  width: 5rem;
+}
