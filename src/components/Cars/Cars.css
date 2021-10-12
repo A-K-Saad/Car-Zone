@@ -1,0 +1,7 @@
+.carImg {
+  background: url(https://www.willow-car-sales.co.uk/wp-content/uploads/2019/11/placeholder-image-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
