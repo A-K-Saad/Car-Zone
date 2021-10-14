@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import GetCarDatas from "../../hooks/GetCarDatas";
 import "./Cars.css";
 
@@ -45,24 +45,28 @@ const Cars = ({ setCount, carCount, setFullCart }) => {
           .map((car) => (
             <div className="col" key={car.id}>
               <div className="card text-center position-relative h-100 justify-content-between">
-                <img
-                  src={car.images[0]}
-                  alt={car.name}
-                  className="carImg"
-                  onError={(event) => (event.target.src = car.images[0])}
-                />
+                <Link to={`/cars/${car.id}`}>
+                  <img
+                    src={car.images[0]}
+                    alt={car.name}
+                    className="carImg"
+                    onError={(event) => (event.target.src = car.images[0])}
+                  />
+                </Link>
                 <div className="p-3 d-grid">
-                  <h5 className="pt-2 car-name text-primary">{car.name}</h5>
-                  <h4 className="text-danger">${car.price}</h4>
-                  <h6>{car.mpg}</h6>
-                  <NavLink
-                    to={`cars/${car.id}`}
-                    className="position-absolute top-0 end-0"
-                  >
-                    <button className="btn btn-lightblue rounded-0">
-                      <i className="fas fa-info-circle h4 m-0"></i>
-                    </button>
-                  </NavLink>
+                  <Link to={`/cars/${car.id}`} className="text-decoration-none">
+                    <h5 className="pt-2 car-name text-primary">{car.name}</h5>
+                    <h4 className="text-danger">${car.price}</h4>
+                    <h6 className="text-dark">{car.mpg}</h6>
+                    <NavLink
+                      to={`cars/${car.id}`}
+                      className="position-absolute top-0 end-0"
+                    >
+                      <button className="btn btn-lightblue rounded-0">
+                        <i className="fas fa-info-circle h4 m-0"></i>
+                      </button>
+                    </NavLink>
+                  </Link>
                   <button
                     className="btn btn-darkblue rounded-0 mt-2"
                     onClick={() => addtocart(car.id)}
