@@ -5,6 +5,7 @@ import "./App.css";
 import CarDetails from "./components/CarDetails/CarDetails";
 import Cars from "./components/Cars/Cars";
 import Cart from "./components/Cart/Cart";
+import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Navbar from "./components/Navbar/Navbar";
@@ -149,6 +150,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
     </>
   );

@@ -1,6 +1,6 @@
 import { getAuth } from "@firebase/auth";
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import UseFirebase from "../../hooks/UseFirebase";
 import "./Navbar.css";
 
@@ -25,12 +25,14 @@ const Navbar = ({ count }) => {
             <h1 className="m-0 ps-2 main-title">Car Zone</h1>
           </a>
           <div className="cart-div d-md-none">
-            <button className="btn shadow-none position-relative py-1 px-1 my-2 my-md-0">
-              <i className="fas fa-shopping-cart text-light h3 m-0"></i>
-              <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center">
-                <small>{count ? count : 0}</small>
-              </div>
-            </button>
+            <Link to="/cart">
+              <button className="btn shadow-none position-relative py-1 px-1 my-2 my-md-0">
+                <i className="fas fa-shopping-cart text-light h3 m-0"></i>
+                <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center">
+                  <small>{count ? count : 0}</small>
+                </div>
+              </button>
+            </Link>
           </div>
           <button
             className="navbar-toggler"
@@ -62,12 +64,14 @@ const Navbar = ({ count }) => {
                   Sell Cars
                 </NavLink>
                 <div className="cart-div d-none d-md-block">
-                  <button className="btn shadow-none position-relative py-1 px-1 my-2 my-md-0">
-                    <i className="fas fa-shopping-cart text-light h3 m-0"></i>
-                    <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center">
-                      <small>{count ? count : 0}</small>
-                    </div>
-                  </button>
+                  <Link to="/cart">
+                    <button className="btn shadow-none position-relative py-1 px-1 my-2 my-md-0">
+                      <i className="fas fa-shopping-cart text-light h3 m-0"></i>
+                      <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center">
+                        <small>{count ? count : 0}</small>
+                      </div>
+                    </button>
+                  </Link>
                 </div>
               </div>
               {currentUser?.email ? (

@@ -53,7 +53,7 @@ const CarDetails = ({ setCount, carCount, setFullCart }) => {
   return (
     <>
       <div className="text-center">
-        <div className="row pt-5 mt-3 mt-md-5">
+        <div className="row py-5 mt-3 mt-md-5">
           <div className="col-12 col-md-6 text-center">
             <img
               src={activeImg || newCar?.images[0]}

@@ -39,13 +39,18 @@ const Header = () => {
                 <h1 className="display-2">
                   FIND NEW <br /> ROAD
                 </h1>
-                <p>
+                <p className="d-none d-md-block">
                   IF YOU WANT TO GO AHEAD, DON'T WASTE YOUR TIME AND BOOK THE
                   LAMBORGINI NOW! <br />
                   <br /> WE'RE ALWAYS WITH YOU!
                 </p>
+                <small className="d-block d-md-none">
+                  IF YOU WANT TO GO AHEAD, DON'T WASTE YOUR TIME AND BOOK THE
+                  LAMBORGINI NOW! <br />
+                  <br /> WE'RE ALWAYS WITH YOU!
+                </small>
                 <Link to="/cars">
-                  <button className="btn btn-lightblue pe-auto">
+                  <button className="btn btn-lightblue pe-auto mt-3">
                     Book Now
                   </button>
                 </Link>
@@ -58,12 +63,16 @@ const Header = () => {
                 <h1 className="display-4">
                   BUY PREMIUM LUXURY <br /> CARS
                 </h1>
-                <p>
+                <p className="d-none d-md-block">
                   BUY CARS TO GET PREMIUM COSTS IN A CHEAP COST. <br /> LET US
                   HELP YOU TO MAKE YOUR LIFE EASIER AND LUXURIOUS.
                 </p>
+                <small className="d-block d-md-none pe-3">
+                  BUY CARS TO GET PREMIUM COSTS IN A CHEAP COST. LET US HELP YOU
+                  TO MAKE YOUR LIFE EASIER AND LUXURIOUS.
+                </small>
                 <Link to="/cars">
-                  <button className="btn btn-lightblue pe-auto">
+                  <button className="btn btn-lightblue pe-auto mt-3">
                     Book Now
                   </button>
                 </Link>
@@ -82,12 +91,16 @@ const Header = () => {
                 <h1 className="display-5">
                   THE WIND IS EVEN <br /> NEVER CLOSE <br /> TO US
                 </h1>
-                <p>
+                <p className="d-none d-md-block">
                   GET THE BEST LOOKING FIRST EVER BEST MODEL. INTRODUCTION IN
                   BELIEVE.
                 </p>
+                <small className="d-block d-md-none ps-3">
+                  GET THE BEST LOOKING FIRST EVER BEST MODEL. INTRODUCTION IN
+                  BELIEVE.
+                </small>
                 <Link to="/cars">
-                  <button className="btn btn-lightblue pe-auto">
+                  <button className="btn btn-lightblue pe-auto mt-3">
                     Book Now
                   </button>
                 </Link>

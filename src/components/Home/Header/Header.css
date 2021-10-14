@@ -30,4 +30,12 @@ img {
   .h-md-28rem {
     height: auto;
   }
+  .item-1 {
+    background: linear-gradient(#0000009c, #0000008f),
+      url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+  }
+  .item-2 {
+    background: linear-gradient(#0000009d, #000000a1),
+      url(https://wallpapercave.com/wp/wp2869307.jpg);
+  }
 }

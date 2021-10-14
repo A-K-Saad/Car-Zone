@@ -2,6 +2,9 @@
 .navbar {
   background: #103658;
 }
+.footer-bg {
+  background: #103658;
+}
 .navbar-light .navbar-nav .nav-link {
   color: #e7e9ff;
 }
