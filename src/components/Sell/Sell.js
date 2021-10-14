@@ -19,10 +19,10 @@ const Sell = () => {
                 }}
               >
                 <label>VIN:</label>
-                <div className="position-relative d-grid input-group mb-1">
+                <div className="position-relative d-grid mb-1">
                   <input
                     type="text"
-                    className="outline-none rounded-0"
+                    className="outline-none rounded-0 py-2"
                     placeholder="Enter Your Car VIN"
                     required
                     maxLength="15"
@@ -43,7 +43,7 @@ const Sell = () => {
                 </button>
               </form>
             </div>
-            <div className="col-12 col-md-7 d-flex flex-column justify-content-center text-start">
+            <div className="col-12 col-md-7 d-flex flex-column justify-content-center text-start mt-5 mt-md-0">
               <div className="w-100">
                 <h2>Try Your Car OFF Rental</h2>
                 <p className="m-0">
