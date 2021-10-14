@@ -1,44 +1,27 @@
 import React, { useState } from "react";
-import GetCarDatas from "../../hooks/GetCarDatas";
+import { Link } from "react-router-dom";
 import Cars from "../Cars/Cars";
+import Header from "./Header/Header";
 import "./Home.css";
 
-const Home = ({ setCount }) => {
-  const cars = GetCarDatas();
-
-  let cart = JSON.parse(localStorage.getItem("cart"));
-  if (!cart) {
-    cart = [];
-  }
-  let cartCount = 0;
-
-  const addtocart = (carId) => {
-    const car = {
-      id: carId,
-      quantity: 1,
-    };
-    const exist = cart.find((el) => el.id === carId);
-    if (exist) {
-      exist.quantity = exist.quantity + 1;
-    } else {
-      cart.push(car);
-    }
-    localStorage.setItem("cart", JSON.stringify(cart));
-    cartCount = cartCount + 1;
-    //Setting Count Data
-    let myCartCount = cart.map((count) => count.quantity);
-    const myCount = myCartCount.reduce(
-      (previousValue, currentValue) => previousValue + currentValue,
-      0
-    );
-    setCount(myCount);
-  };
-
+const Home = ({ setCount, setFullCart }) => {
   return (
     <>
-      <section className="py-5 mt-5">
-        <div className="container py-3">
-          <Cars addtocart={addtocart}></Cars>
+      <section className="mt-3 mt-md-4 py-5 text-center">
+        <Header></Header>
+        <div className="container">
+          <h2 className="mt-3">Popular Cars</h2>
+          <div className="underline"></div>
+          <Cars
+            setCount={setCount}
+            carCount={8}
+            setFullCart={setFullCart}
+          ></Cars>
+          <Link to="/cars">
+            <button className="btn btn-lightblue mx-auto mt-4 px-4 py-2">
+              <i className="fas fa-car"></i> See All Cars
+            </button>
+          </Link>
         </div>
       </section>
     </>

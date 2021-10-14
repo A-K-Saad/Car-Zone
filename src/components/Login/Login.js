@@ -1,10 +1,20 @@
+import { getAuth } from "@firebase/auth";
 import React from "react";
+import { useHistory } from "react-router";
 import UseFirebase from "../../hooks/UseFirebase";
 import "./Login.css";
 
 const Login = () => {
-  const { user, signInWithGoogle } = UseFirebase();
-  console.log(user);
+  const { signInWithGoogle } = UseFirebase();
+
+  const history = useHistory();
+
+  const { currentUser } = getAuth();
+  const location = JSON.parse(localStorage.getItem("location"));
+  if (currentUser) {
+    history.push(location);
+  }
+
   return (
     <>
       <div className="login-form container d-flex align-items-center justify-content-center">

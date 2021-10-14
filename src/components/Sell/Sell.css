@@ -1,0 +1,12 @@
+.input-group input {
+  padding: 10px 0;
+  padding-left: 55px;
+}
+.bg-white {
+  background: #fff;
+}
+input,
+textarea {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px #ddd;
+}

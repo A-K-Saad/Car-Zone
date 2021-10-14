@@ -1,0 +1,42 @@
+.btn-delete {
+  background: #ff7b7b;
+  color: #fff;
+  width: 3rem;
+  height: 2.5rem;
+  padding: 0 !important;
+}
+.btn-delete:hover {
+  background: #ff3636;
+  color: #fff;
+}
+.car-img {
+  width: 6rem;
+}
+.text-ellipsis {
+  font-size: 1.3rem;
+}
+.plus-minus-btn {
+  background: #999;
+  padding: 1px 7px;
+  color: #fff;
+}
+.w-3rem {
+  width: 3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 688px) {
+  .car-img {
+    width: 4rem;
+  }
+  .text-ellipsis {
+    font-size: 1rem;
+    width: 5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .btn-delete {
+    width: 2rem;
+    height: 1.7rem;
+  }
+}

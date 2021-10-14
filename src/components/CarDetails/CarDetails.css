@@ -1,0 +1,15 @@
+.little-image img {
+  width: 5rem;
+  height: 4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.little-image img:hover {
+  box-shadow: 0 0 5px #cbcbcb;
+}
+.big-car-img {
+  width: 100%;
+}
+.active-img {
+  background: #cfedff;
+}

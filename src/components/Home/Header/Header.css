@@ -1,0 +1,33 @@
+img {
+  width: 100%;
+}
+.carousel-item {
+  height: 34rem;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.h-md-28rem {
+  height: 28rem;
+}
+.reflect-y {
+  transform: rotatey(180deg);
+}
+.item-1 {
+  background: url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+}
+.item-2 {
+  background: linear-gradient(#363333da, #444242d5 50%, #1e305b 50%),
+    url(https://wallpapercave.com/wp/wp2869307.jpg);
+}
+.item-3 {
+  background: url(http://www.audi-sport.net/xf/attachments/leftfront1-jpg.39602/);
+}
+@media only screen and (max-width: 688px) {
+  .carousel-item {
+    height: 22rem;
+  }
+  .h-md-28rem {
+    height: auto;
+  }
+}
