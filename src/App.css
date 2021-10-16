@@ -3,10 +3,11 @@
 }
 .underline {
   background: #cbcdff;
-  height: 9px;
-  width: 16rem;
+  height: 6px;
+  width: 6rem;
   margin: auto;
-  border-radius: 50%;
+  margin-bottom: 1rem;
+  border-radius: 50rem;
 }
 .btn-lightblue {
   background: #70acff;
@@ -44,10 +45,16 @@ img {
 .h-100vh {
   min-height: 92.2vh;
 }
+.h-m-screen {
+  min-height: 100vh;
+}
 .success-img {
   max-width: 30rem;
   width: 100%;
 }
 .text-darkblue {
   color: #3f47a9;
+}
+.bg-red {
+  background: #f91944;
 }

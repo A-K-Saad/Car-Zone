@@ -7,7 +7,7 @@ const Sell = () => {
   return (
     <>
       <div className="bg-warning h-100vh">
-        <div className="container pt-4 pt-md-5 mt-5">
+        <div className="container pt-4 pt-md-5">
           <div className="row justify-content-between">
             <div className="col-12 col-md-4 h-77vh d-flex align-items-center justify-content-center">
               <form
@@ -22,7 +22,7 @@ const Sell = () => {
                 <div className="position-relative d-grid mb-1">
                   <input
                     type="text"
-                    className="outline-none rounded-0 py-2"
+                    className="outline-none rounded-0 py-2 ps-5"
                     placeholder="Enter Your Car VIN"
                     required
                     maxLength="15"

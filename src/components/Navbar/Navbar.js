@@ -11,7 +11,7 @@ const Navbar = ({ count }) => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light py-0 px-2 fixed-top px-md-0">
+      <nav className="navbar navbar-expand-lg navbar-light py-0 px-2 sticky-top px-md-0">
         <div className="container p-0">
           <a className="navbar-brand d-flex align-items-center" href="/">
             <img

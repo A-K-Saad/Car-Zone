@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./Cart.css";
 
-const Cart = ({ car, deleteCar, setCount, previousCount, selectedCars }) => {
+const SingleCart = ({
+  car,
+  deleteCar,
+  selectedCars,
+  setCount,
+  previousCount,
+}) => {
   const [quantity, setQuantity] = useState(0);
 
   const cart = JSON.parse(localStorage.getItem("cart"));
@@ -30,28 +35,27 @@ const Cart = ({ car, deleteCar, setCount, previousCount, selectedCars }) => {
     }
     localStorage.setItem("cart", JSON.stringify(cart));
   };
-
   return (
     <>
-      <div className="col-12 py-2 d-flex justify-content-between align-items-center my-2 bg-light">
+      <div className="col-12 py-2 d-flex justify-content-between align-items-center my-2 single-cart">
         <div className="d-flex align-items-center">
           <img src={car?.images[0]} alt="Car_Cart_Image" className="car-img" />
           <h6 className="ps-3 m-0 text-ellipsis">{car?.name}</h6>
         </div>
         <div className="d-flex align-items-center justify-content-between">
-          <div className="d-flex align-items-center justify-content-between cart-btns h5 m-0 pe-2 pe-md-5">
+          <div className="d-flex align-items-center justify-content-between cart-btns h5 m-0 px-2 py-1 px-md-3 py-md-2 rounded-pill me-2 me-md-4 border">
             <button
-              className="btn shadow-none plus-minus-btn"
-              onClick={() => handlePlusMinus(true)}
-            >
-              <i className="fas fa-plus"></i>
-            </button>
-            <h4 className="m-0 px-2 w-3rem">{quantity}</h4>
-            <button
-              className="btn shadow-none plus-minus-btn"
+              className="btn shadow-none plus-minus-btn bg-red rounded-circle"
               onClick={() => handlePlusMinus(false)}
             >
               <i className="fas fa-minus"></i>
+            </button>
+            <h4 className="m-0 w-2rem">{quantity}</h4>
+            <button
+              className="btn shadow-none plus-minus-btn bg-red rounded-circle"
+              onClick={() => handlePlusMinus(true)}
+            >
+              <i className="fas fa-plus"></i>
             </button>
           </div>
           <button
@@ -66,4 +70,4 @@ const Cart = ({ car, deleteCar, setCount, previousCount, selectedCars }) => {
   );
 };
 
-export default Cart;
+export default SingleCart;

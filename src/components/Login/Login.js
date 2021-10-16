@@ -10,6 +10,7 @@ const Login = () => {
   const history = useHistory();
 
   const { currentUser } = getAuth();
+
   const location = JSON.parse(localStorage.getItem("location"));
   if (currentUser) {
     history.push(location);

@@ -5,3 +5,27 @@
   background-position: center;
   position: relative;
 }
+.car-image {
+  background: url(https://www.willow-car-sales.co.uk/wp-content/uploads/2019/11/placeholder-image-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 15rem;
+}
+.price {
+  position: absolute;
+  background: #7b9eff;
+  color: #fff;
+  transform: rotate(315deg);
+  top: 11px;
+  left: -28px;
+  padding: 4px 27px;
+}
+.car-name {
+  font-size: large;
+}
+@media only screen and (max-width: 688px) {
+  .car-image {
+    width: 100%;
+  }
+}
