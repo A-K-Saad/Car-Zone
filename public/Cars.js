@@ -15,6 +15,7 @@ const cars = [
     carLocation: "1021 Baltimore Pike, Glen Mills, PA 19342",
     vin: "#3MZBPADL1LM127644",
     engine: "2.5L I-4",
+    fuel_type: "Gasoline",
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ const cars = [
     mpg: "26 City / 36 Highway",
     vin: "#1VWSA7A30MC002744",
     engine: "2.0L I-4 Turbocharged",
+    fuel_type: "Gasoline",
   },
   {
     id: 3,
@@ -49,6 +51,7 @@ const cars = [
     carLocation: "1021 Baltimore Pike, Glen Mills, PA 19342",
     vin: "#2C3CDZFJ6LH206952",
     engine: "6.4L V8",
+    fuel_type: "Gasoline",
   },
   {
     id: 4,
@@ -66,6 +69,7 @@ const cars = [
     carLocation: "2801 Bethlehem Pike, Hatfield, PA 19440",
     vin: "#5YFEPMAE4MP167265",
     engine: "1.8L I-4",
+    fuel_type: "Gasoline",
   },
   {
     id: 5,
@@ -83,6 +87,7 @@ const cars = [
     carLocation: "4095 Route 1 South, Monmouth Junction, NJ 08852",
     vin: "#5YJYGDEE9MF246482",
     engine: "Electric Motor",
+    fuel_type: "Gasoline",
   },
   {
     id: 6,
@@ -100,6 +105,7 @@ const cars = [
     carLocation: "21200 Route 19, Cranberry Township, PA 16066",
     vin: "#3FA6P0LU1LR183701",
     engine: "2.0L I-4 Hybrid",
+    fuel_type: "Gasoline",
   },
   {
     id: 7,
@@ -117,6 +123,7 @@ const cars = [
     carLocation: "2801 Bethlehem Pike, Hatfield, PA 19440",
     vin: "#1G1FG1R71M0103390",
     engine: "6.2L V8",
+    fuel_type: "Gasoline",
   },
   {
     id: 8,
@@ -134,6 +141,7 @@ const cars = [
     carLocation: "1021 Baltimore Pike, Glen Mills, PA 19342",
     vin: "#19XFC1F3XLE213395",
     engine: "1.5L I-4 Turbocharged",
+    fuel_type: "Gasoline",
   },
   {
     id: 9,
@@ -151,6 +159,7 @@ const cars = [
     carLocation: "1021 Baltimore Pike, Glen Mills, PA 19342",
     vin: "#4T1A21FB2LU017047",
     engine: "2.5L I-4 Hybrid",
+    fuel_type: "Gasoline",
   },
   {
     id: 10,
@@ -168,6 +177,7 @@ const cars = [
     carLocation: "Pottstown Pike, Chester Springs, PA 19425",
     vin: "#YV4102WK5M1071961",
     engine: "2.0L I-4 Turbocharged",
+    fuel_type: "Gasoline",
   },
   {
     id: 11,
@@ -185,6 +195,7 @@ const cars = [
     carLocation: "4095 Route 1 South, Monmouth Junction, NJ 08852",
     vin: "#1G1YX2D75H5110096",
     engine: "6.2L V8",
+    fuel_type: "Gasoline",
   },
   {
     id: 12,
@@ -202,6 +213,7 @@ const cars = [
     carLocation: "2801 Bethlehem Pike, Hatfield, PA 19440",
     vin: "#1G1YX2D75H5110096",
     engine: "1.8L I-4",
+    fuel_type: "Gasoline",
   },
   {
     id: 13,
@@ -219,6 +231,7 @@ const cars = [
     carLocation: "21 Pottstown Pike, Chester Springs, PA 19425",
     vin: "#1G1YS2D6XG5611585",
     engine: "6.2L V8 Supercharged",
+    fuel_type: "Gasoline",
   },
   {
     id: 14,
@@ -236,6 +249,7 @@ const cars = [
     carLocation: "21 Pottstown Pike, Chester Springs, PA 19425",
     vin: "#1G1FK1R65K0156757",
     engine: "6.2L V8 Supercharged",
+    fuel_type: "Gasoline",
   },
   {
     id: 15,
@@ -253,6 +267,7 @@ const cars = [
     carLocation: "21 Pottstown Pike, Chester Springs, PA 19425",
     vin: "#3GCUYDED7LG119970",
     engine: "5.3L V8",
+    fuel_type: "Gasoline",
   },
   {
     id: 16,
@@ -270,5 +285,6 @@ const cars = [
     carLocation: "21 Pottstown Pike, Chester Springs, PA 19425",
     vin: "#19UUB6F51MA006344",
     engine: "2.0L I-4 Turbocharged",
+    fuel_type: "Gasoline",
   },
 ];

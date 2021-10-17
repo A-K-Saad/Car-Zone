@@ -17,9 +17,11 @@
   background: #7b9eff;
   color: #fff;
   transform: rotate(315deg);
-  top: 11px;
-  left: -28px;
+  top: 17px;
+  left: -26px;
   padding: 4px 27px;
+  clip-path: polygon(25% 0, 75% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(25% 0, 75% 0%, 100% 100%, 0% 100%);
 }
 .car-name {
   font-size: large;
