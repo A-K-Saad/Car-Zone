@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./components/NotFound/NotFound";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Sell from "./components/Sell/Sell";
+import Signup from "./components/SignUp/Signup";
 import CartCount from "./hooks/Cart";
 import GetCarDatas from "./hooks/GetCarDatas";
 
@@ -64,6 +65,9 @@ function App() {
             </Route>
             <Route exact path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="/signup">
+              <Signup></Signup>
             </Route>
             <Route exact path="/cart">
               {selectedCars?.length ? (

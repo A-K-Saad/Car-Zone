@@ -2,11 +2,12 @@ import { getAuth } from "@firebase/auth";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import Swal from "sweetalert2";
+import GetCarDatas from "../../hooks/GetCarDatas";
+import Cars from "../Cars/Cars";
 import "./Carts.css";
 import SingleCart from "./SingleCart/SingleCart";
 
 const Cart = ({
-  car,
   deleteCar,
   setCount,
   previousCount,
@@ -17,16 +18,22 @@ const Cart = ({
 
   let history = useHistory();
   const { currentUser } = getAuth();
+  const cars = GetCarDatas();
 
   const cart = JSON.parse(localStorage.getItem("cart"));
-  const currentCar = cart?.find((el) => el?.id === car?.id);
-  let currentQuantity = currentCar?.quantity;
+  // const currentCar = cart?.find((el) => el?.id === car?.id);
+  // let currentQuantity = currentCar?.quantity;
 
-  const price = selectedCars.find((el) => el?.id === car?.id)?.price * quantity;
+  // const price = selectedCars.find((el) => el?.id === car?.id)?.price * quantity;
 
   useEffect(() => {
-    setQuantity(currentQuantity);
+    // setQuantity(currentQuantity);
   }, []);
+  console.log(
+    cart?.map(
+      (singleCart) => cars?.find((car) => car?.id === singleCart?.id)?.price
+    )
+  );
 
   const placedOrder = () => {
     if (!currentUser) {

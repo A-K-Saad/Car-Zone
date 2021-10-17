@@ -8,6 +8,7 @@ const Navbar = ({ count }) => {
   const { signInWithGoogle, logOut } = UseFirebase();
 
   const { currentUser } = getAuth();
+  console.log(currentUser);
 
   return (
     <>
@@ -83,21 +84,30 @@ const Navbar = ({ count }) => {
                     <i className="fas fa-sign-out-alt"></i> Sign Out
                   </button>
                   <img
-                    src={currentUser?.photoURL}
-                    alt="Avatar"
+                    src={
+                      currentUser?.photoURL ||
+                      "https://i.ibb.co/qgbdqZ3/male.png"
+                    }
                     onError={(event) =>
                       (event.target.src = "https://i.ibb.co/qgbdqZ3/male.png")
                     }
+                    alt="Avatar"
                     className="rounded-pill ms-3 avatar-img my-2 my-md-0"
                   />
                 </>
               ) : (
-                <button
-                  className="btn btn-darkblue ms-0 ms-md-5 my-2 my-md-0"
-                  onClick={signInWithGoogle}
-                >
-                  <i className="fas fa-sign-in-alt"></i> Sign In
-                </button>
+                <>
+                  <Link to="/signup">
+                    <button className="btn btn-primary ms-0 ms-md-5 my-2 my-md-0">
+                      <i className="fas fa-sign-in-alt"></i> Sign Up
+                    </button>
+                  </Link>
+                  <Link to="/login">
+                    <button className="btn btn-darkblue ms-0 ms-md-3 my-2 my-md-0">
+                      <i className="fas fa-sign-in-alt"></i> Sign In
+                    </button>
+                  </Link>
+                </>
               )}
             </div>
           </div>

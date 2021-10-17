@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router";
+import Swal from "sweetalert2";
 import "./Sell.css";
 
 const Sell = () => {
   const history = useHistory();
+
+  useEffect(() => {
+    localStorage.removeItem("location");
+  }, []);
+
+  const continueSell = () => {
+    Swal.fire({
+      title: "Success!",
+      text: "Selled Car SuccessFully!",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+    localStorage.removeItem("location");
+  };
   return (
     <>
       <div className="bg-warning h-100vh">
@@ -38,6 +53,7 @@ const Sell = () => {
                 <button
                   type="submit"
                   className="bg-warning rounded-0 btn text-light mt-3 py-2"
+                  onClick={continueSell}
                 >
                   Continue
                 </button>
