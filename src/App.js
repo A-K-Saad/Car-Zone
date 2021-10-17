@@ -77,7 +77,11 @@ function App() {
                 ></Cart>
               ) : (
                 <div className="py-4 py-md-5 text-center">
-                  <h1 className="mt-4">No cart To show</h1>
+                  <img
+                    src="https://www.hindarthouse.com/uploads/emptycart.png"
+                    alt="Not Found"
+                    style={{ maxWidth: "22rem" }}
+                  />
                   <h4>Add cars to your cart to checkout them</h4>
                   <Link to="/cars">
                     <button className="btn btn-darkblue mt-5">Back</button>

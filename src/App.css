@@ -58,3 +58,8 @@ img {
 .bg-red {
   background: #f91944;
 }
+@media only screen and (max-width: 688px) {
+  .border-end-0-xssm {
+    border-right: 0px !important;
+  }
+}

@@ -107,6 +107,13 @@ const CarDetails = ({ setCount, carCount, setFullCart }) => {
                   <h6 className="m-0">{newCar?.engine}</h6>
                 </div>
               </div>
+              <div className="d-flex align-items-center py-2">
+                <i className="fas fa-thermometer-full text-dark h2 my-0 me-3"></i>
+                <div className="d-flex flex-column justify-content-between">
+                  <p className="m-0">Fuel Type: </p>
+                  <h6 className="m-0">{newCar?.fuel_type}</h6>
+                </div>
+              </div>
               <div className="d-flex align-items-center flex-column justify-content-center mt-4">
                 <button
                   className="btn btn-darkblue"

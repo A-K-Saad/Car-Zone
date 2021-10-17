@@ -1,12 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import GetCarDatas from "../../../hooks/GetCarDatas";
 import "../Cars.css";
 
-const Cars = ({ setCount, carCount, setFullCart, fullColumn }) => {
+const Cars = ({
+  setCount,
+  carCount,
+  setFullCart,
+  fullColumn,
+  minPrice,
+  maxPrice,
+  optionSelect,
+  selectedEngines,
+}) => {
   const cars = GetCarDatas();
+  const [allCars, setAllCars] = useState([]);
 
   const myCars = cars.slice(0, carCount);
+  let emptyArray = [];
+
+  useEffect(() => {
+    if (myCars.length) {
+      setAllCars(myCars);
+    }
+  }, [myCars.length]);
+
+  useEffect(() => {
+    setAllCars(emptyArray);
+  }, [minPrice, maxPrice]);
+
+  const filterCars = () => {
+    myCars.map((car) => {
+      if (car.price > minPrice && car.price < maxPrice) {
+        emptyArray.push(car);
+      }
+    });
+  };
+
+  filterCars();
 
   let cart = JSON.parse(localStorage.getItem("cart"));
   if (!cart) {
@@ -40,8 +72,16 @@ const Cars = ({ setCount, carCount, setFullCart, fullColumn }) => {
 
   return (
     <>
-      {myCars
-        .sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
+      {allCars
+        .sort((a, b) =>
+          optionSelect === 2
+            ? parseFloat(a.price) - parseFloat(b.price)
+            : optionSelect === 3
+            ? parseFloat(b.mileage) - parseFloat(a.mileage)
+            : optionSelect === 4
+            ? parseFloat(a.mileage) - parseFloat(b.mileage)
+            : parseFloat(b.price) - parseFloat(a.price)
+        )
         .map((car) =>
           !fullColumn ? (
             <div className="col" key={car?.id}>
@@ -99,29 +139,41 @@ const Cars = ({ setCount, carCount, setFullCart, fullColumn }) => {
                     </div>
                   </div>
                 </Link>
-                <div className="ps-0 ps-md-3 pt-3 pt-md-0 d-flex flex-column justify-content-between">
-                  <h5>{car?.name}</h5>
-                  <div className="d-flex">
-                    <div className="d-flex flex-column border-end border-dark px-2">
-                      <small>
-                        <i className="fas fa-tachometer-alt m-0 me-1"></i>
-                        Mileage:
-                      </small>
-                      <h6>{car?.mileage}</h6>
+                <div className="ps-0 ps-md-3 pt-3 pt-md-0 d-flex flex-column justify-content-between w-100">
+                  <Link
+                    to={`/cars/${car.id}`}
+                    className="text-decoration-none text-dark"
+                  >
+                    <h5>{car?.name}</h5>
+                    <div className="d-flex row mt-4">
+                      <div className="d-flex flex-column border-end px-2 col-6 col-md-3">
+                        <small className="text-secondary">
+                          <i className="fas fa-tachometer-alt m-0 me-1"></i>
+                          Mileage:
+                        </small>
+                        <h6>{car?.mileage}</h6>
+                      </div>
+                      <div className="d-flex flex-column border-end px-2 col-6 border-end-0-xssm col-md-3">
+                        <small className="text-secondary">
+                          <i className="fas fa-gas-pump m-0 me-1"></i>MPG:
+                        </small>
+                        <h6>{car?.mpg}</h6>
+                      </div>
+                      <div className="d-flex flex-column border-end px-2 col-6 col-md-3">
+                        <small className="text-secondary">
+                          <i className="fas fa-code-branch m-0 me-1"></i>Engine:
+                        </small>
+                        <h6>{car?.engine}</h6>
+                      </div>
+                      <div className="d-flex flex-column px-2 col-6 col-md-3">
+                        <small className="text-secondary">
+                          <i className="fas fa-thermometer-full m-0 me-1"></i>
+                          Fuel Type:
+                        </small>
+                        <h6>{car?.fuel_type}</h6>
+                      </div>
                     </div>
-                    <div className="d-flex flex-column border-end border-dark px-2">
-                      <small>
-                        <i className="fas fa-gas-pump m-0 me-1"></i>MPG:
-                      </small>
-                      <h6>{car?.mpg}</h6>
-                    </div>
-                    <div className="d-flex flex-column border-end border-dark px-2">
-                      <small>
-                        <i className="fas fa-code-branch m-0 me-1"></i>Engine:
-                      </small>
-                      <h6>{car?.engine}</h6>
-                    </div>
-                  </div>
+                  </Link>
                   <div>
                     <button
                       className="btn btn-darkblue rounded-0 mt-2"
@@ -135,6 +187,21 @@ const Cars = ({ setCount, carCount, setFullCart, fullColumn }) => {
             </div>
           )
         )}
+      {!allCars.length && (
+        <>
+          <div className="text-center">
+            <img
+              src="https://image.flaticon.com/icons/png/512/65/65786.png"
+              alt="Not Found"
+              style={{ width: "12rem" }}
+            />
+            <h1 className="text-secondary display-5 mb-0">OOPS!</h1>
+            <h4 className="mt-0">
+              No cars for minumum {minPrice} and maximum {maxPrice}!!
+            </h4>
+          </div>
+        </>
+      )}
     </>
   );
 };

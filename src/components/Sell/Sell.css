@@ -5,8 +5,7 @@
 .bg-white {
   background: #fff;
 }
-input,
-textarea {
+.input-shadow {
   border: 1px solid #ddd;
   box-shadow: 0 0 5px #ddd;
 }

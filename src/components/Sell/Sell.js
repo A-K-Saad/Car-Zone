@@ -22,7 +22,7 @@ const Sell = () => {
                 <div className="position-relative d-grid mb-1">
                   <input
                     type="text"
-                    className="outline-none rounded-0 py-2 ps-5"
+                    className="outline-none rounded-0 py-2 ps-5 input-shadow"
                     placeholder="Enter Your Car VIN"
                     required
                     maxLength="15"
@@ -31,7 +31,7 @@ const Sell = () => {
                 </div>
                 <label>Car Info:</label>
                 <textarea
-                  className="w-100 outline-none rounded-0 mt-2 p-1"
+                  className="w-100 outline-none rounded-0 mt-2 p-1 input-shadow"
                   rows="7"
                   placeholder="Describe Yor Car Info"
                 ></textarea>

@@ -1,19 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-const SingleCart = ({
-  car,
-  deleteCar,
-  selectedCars,
-  setCount,
-  previousCount,
-}) => {
+const SingleCart = ({ car, deleteCar, setCount, previousCount }) => {
   const [quantity, setQuantity] = useState(0);
 
   const cart = JSON.parse(localStorage.getItem("cart"));
   const currentCar = cart?.find((el) => el?.id === car?.id);
   let currentQuantity = currentCar?.quantity;
-
-  const price = selectedCars.find((el) => el?.id === car?.id)?.price * quantity;
 
   useEffect(() => {
     setQuantity(currentQuantity);
@@ -37,7 +29,7 @@ const SingleCart = ({
   };
   return (
     <>
-      <div className="col-12 py-2 d-flex justify-content-between align-items-center my-2 single-cart">
+      <div className="col-12 p-2 d-flex justify-content-between align-items-center my-2 single-cart">
         <div className="d-flex align-items-center">
           <img src={car?.images[0]} alt="Car_Cart_Image" className="car-img" />
           <h6 className="ps-3 m-0 text-ellipsis">{car?.name}</h6>
